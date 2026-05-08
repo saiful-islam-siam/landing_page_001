@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siam-Landing Page - GITHUB</title>
+
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Siam-Landing Page</h1>
+        <p>Your one-stop solution for web development and design.</p>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers and designers dedicated to creating stunning websites and
+            applications.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>SEO Optimization</li>
+            <li>Content Creation</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Check out some of our recent projects and see how we can help bring your vision to life.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a project in mind? Get in touch with us to discuss your requirements and get a free quote.</p>
+
+        <form action="submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
 </body>
+
 </html>
